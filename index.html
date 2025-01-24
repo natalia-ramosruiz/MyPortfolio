@@ -1,40 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <!-- Navbar -->
-  <header>
-    <div class="logo">
-      <span class="icon">🌟</span>
-      <span class="portfolio-title">My Portfolio</span>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#about-me">About me</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#contact-info">Contact Info</a></li>
-      </ul>
-    </nav>
-  </header>
+    <head>
+        <meta charset="utf-8">
+        <title>My Portfolio - Natalia Ramos Ruiz</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
 
-  <!-- About Me Section -->
-  <section id="about-me">
-    <h2>About me</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...</p>
-    <a href="#cv" class="button">Curriculum Vitae</a>
-  </section>
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-  <!-- Placeholder for other sections -->
-  <section id="projects"></section>
-  <section id="skills"></section>
-  <section id="blog"></section>
-  <section id="contact-info"></section>
-</body>
+        <!-- Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+        <!--Customized CSS-->
+        <link href="style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <!--SIDEBAR-->
+            <div class="sidebar">
+                <div class="sidebar-text d-flex flex-column h-100 justify-content-center text-center">
+                    <img class="mx-auto d-block w-75 bg-primary profile-pic rounded-circle mb-3 mt-1" src="https://res.cloudinary.com/dmljqigr5/image/upload/v1737238101/WhatsApp_Image_2025-01-18_at_17.08.02_zzdcrt.jpg" alt="profile-pic">
+                    <h1 class="font-weight-bold">Natalia Ramos Ruiz</h1>
+                    <p class="mb-4">
+                        Welcome to my portfolio. Explore my skills, projects, and experience in web development.
+                    </p>
+                    <div class="d-flex justify-content-center mb-5">
+                        <a class="btn btn-outline-primary mr-2" href="https://github.com/natalia-ramosruiz" target="_blank"><i class="fab fa-github"></i></a>
+                        <a class="btn btn-outline-primary mr-2" href="https://www.linkedin.com/in/nataliaramosruiz-developer/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-primary mr-2" href="https://www.instagram.com/tu-usuario/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <a href="https://docs.google.com/document/d/1uc9eqAwHCuKykxyMf5EqRxO0dMcrCzFd/edit" target="_blank" class="btn btn-lg btn-primary download-cv">Download CV</a>
+                </div>
+                <div class="sidebar-icon d-flex flex-column h-100 justify-content-center text-right">
+                    <i class="fas fa-2x fa-angle-double-right text-primary"></i>
+                </div>
+            </div>
+            <!--END SIDEBAR-->
+
+            <!--CONTENIDO-->
+            <div class="content">
+                <!-- NAVBAR -->
+                <div class="container p-0">
+                    <nav class="navbar navbar-expand-lg bg-secondary navbar-dark">
+                        <a href="" class="navbar-brand d-block d-lg-none">Navigation</a>
+                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                            <div class="navbar-nav m-auto">
+                                <a href="index.html" class="nav-item nav-link active">Home</a>
+                                <a href="about.html" class="nav-item nav-link">About Me</a>
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">My Portfolio</a>
+                                    <div class="dropdown-menu">
+                                        <a href="#web-design" class="dropdown-item">Web Design</a>
+                                        <a href="#mobile-apps" class="dropdown-item">Mobile Apps</a>
+                                        <a href="#apps-design" class="dropdown-item">Apps Design</a>
+                                        <a href="#content-creating" class="dropdown-item">Content Creating</a>
+                                    </div>
+                                </div>
+                                <a href="#technologies" class="nav-item nav-link">Technologies</a>
+                                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <!-- END NAVBAR -->
+            
+                <!-- HOME -->
+                <!-- CAROUSEL-->
+                    <div class="container p-0">
+                        <div id="blog-carousel" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="w-100" src="https://res.cloudinary.com/dmljqigr5/image/upload/v1737252609/pexels-harold-vasquez-853421-2653362_oxvmms.jpg" alt="Image">
+                                <div class="carousel-caption d-flex flex-column align-items-center justify-content-bottom">
+                                    <div class="d-flex text-dark">
+                                        <small class="mr-2"><i class="fa fa-folder"></i> Web Development</small>
+                                    </div>
+                                    <a href="" class="btn btn-dark mt-4">Read More</a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="w-100" src="https://res.cloudinary.com/dmljqigr5/image/upload/v1737253043/documents-on-minimal-web-design-2023-11-27-05-14-22-utc_jzpigv.jpg" alt="Image">
+                                <div class="carousel-caption d-flex flex-column align-items-center justify-content-bottom">
+                                    <div class="d-flex text-dark">
+                                        <small class="mr-2"><i class="fa fa-folder"></i> Web Design</small>
+                                    </div>
+                                    <a href="" class="btn btn-dark mt-4">Read More</a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="w-100" src="https://res.cloudinary.com/dmljqigr5/image/upload/v1737253032/website-design-wireframe-2024-12-06-15-50-54-utc_cjob4i.jpg" alt="Image">
+                                <div class="carousel-caption d-flex flex-column align-items-center justify-content-bottom">
+                                    <div class="d-flex text-dark">
+                                        <small class="mr-2"><i class="fa fa-folder"></i> App Design</small>
+                                    </div>
+                                    <a href="" class="btn btn-dark mt-4">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#blog-carousel" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#blog-carousel" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                </div>
+                <!-- CAROUSEL END -->
+
+                <!--SUBSCRIBE-->      .
+                <div class="container py-5 px-4 bg-secondary text-center">
+                    <h1 class="text-white font-weight-bold">Subscribe My Newsletter</h1>
+                    <p class="text-white">Subscribe and get my latest article in your inbox</p>
+                    <form class="form-inline justify-content-center">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Your Email">
+                            <div class="input-group-append">
+                              <button class="btn btn-primary" type="submit">Subscribe</button>
+                            </div>
+                          </div>
+                    </form>
+                </div>
+                <!--END SUBSCRIBE-->
+                <!--END HOME-->
+
+                <!--MY PORTFOLIO-->
+                <div class="service" id="service">
+                    <div class="container">
+                        <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                            <p>What I do</p>
+                            <h2>Awesome Quality Services</h2>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
+                                <div class="service-item">
+                                    <div class="service-icon">
+                                        <i class="fa fa-laptop"></i>
+                                    </div>
+                                    <div class="service-text">
+                                        <h3>Web Design</h3>
+                                        <p>
+                                            Lorem ipsum dolor sit amet elit. Phase nec preti mi. Curabi facilis ornare velit non
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
+                                <div class="service-item">
+                                    <div class="service-icon">
+                                        <i class="fa fa-laptop-code"></i>
+                                    </div>
+                                    <div class="service-text">
+                                        <h3>Web Development</h3>
+                                        <p>
+                                            Lorem ipsum dolor sit amet elit. Phase nec preti mi. Curabi facilis ornare velit non
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
+                                <div class="service-item">
+                                    <div class="service-icon">
+                                        <i class="fab fa-android"></i>
+                                    </div>
+                                    <div class="service-text">
+                                        <h3>Apps Design</h3>
+                                        <p>
+                                            Lorem ipsum dolor sit amet elit. Phase nec preti mi. Curabi facilis ornare velit non
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
+                                <div class="service-item">
+                                    <div class="service-icon">
+                                        <i class="fab fa-apple"></i>
+                                    </div>
+                                    <div class="service-text">
+                                        <h3>Apps Development</h3>
+                                        <p>
+                                            Lorem ipsum dolor sit amet elit. Phase nec preti mi. Curabi facilis ornare velit non
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--END MY PORTFOLIO-->
+
+                <!--FOOTER-->
+                <div class="container py-4 bg-secondary text-center">
+                    <p class="m-0 text-white">
+                        &copy; <a class="text-white font-weight-bold" href="#">My Portfolio</a>. All Rights Reserved. Designed by Natalia Ramos.
+                    </p>
+                </div>
+                <!--END FOOTER-->
+            </div>
+        </div>
+
+        <!-- Back to Top -->
+        <a href="#" class="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+        
+        <!-- Bootstrap JS and Custom JS -->
+         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+         <!-- Template Javascript -->
+          <script src="js/main.js"></script>
+    </body>
 </html>
