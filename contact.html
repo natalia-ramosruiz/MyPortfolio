@@ -74,32 +74,63 @@
                 <!--ABOUT HEADER-->
                 <div class="container py-5 px-2 bg-light" id=aboutheader>
                         <div class="position-relative d-flex align-items-center justify-content-center">
-                            <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 2px #511F73;">About Me</h1>
+                            <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 2px #F29727;">CONTACT ME</h1>
                             
                         </div>
                 </div>
                 <!--END ABOUT HEADER-->
 
-                <!--ABOUT CONTENT-->
-                <div class="container py-5 px-4 text-center" id="aboutcontainer">
-                        <h3 class="mb-4">Full-Stack Developer & UI/UX Designer</h3>
-                        <p>Soy Natalia Ramos Ruiz, desarrolladora full-stack con una fuerte pasión por crear experiencias digitales interactivas. Con formación en Lenguas Modernas y una sólida base en diseño web y programación, combino creatividad y lógica para desarrollar soluciones innovadoras. Mi enfoque se basa en el aprendizaje continuo y la adaptación a nuevas tecnologías.</p>
-                        <div class="row mb-3">
-                            <div class="col-sm-6 py-2"><h6>Name: <span class="text-secondary">Natalia Ramos Ruiz</span></h6></div>
-                            <div class="col-sm-6 py-2"><h6>Degree: <span class="text-secondary">Master</span></h6></div>
-                            <div class="col-sm-6 py-2"><h6>Experience: <span class="text-secondary">1 Year</span></h6></div>
-                            <div class="col-sm-6 py-2"><h6>Phone: <span class="text-secondary">+57 318 883 2893</span></h6></div>
-                            <div class="col-sm-6 py-2"><h6>Email: <span class="text-secondary">ramosruiznatalia12@gmail.com</span></h6></div>
-                            <div class="col-sm-6 py-2"><h6>Address: <span class="text-secondary">Bogotá, Colombia</span></h6></div>
+                <!--CONTACT CONTENT-->
+                <main class="contact-container">
+                    <div class="contact-content">
+                        <div class="contact-info">
+                            <h2>Información de Contacto</h2>
+                            <div class="contact-links">
+                                <a href="mailto:tu-email@ejemplo.com" class="contact-link email">
+                                    <i class="fas fa-envelope"></i>
+                                    ramosruiznatalia12@gmail.com
+                                </a>
+                                <a href="https://linkedin.com/in/tu-perfil" class="contact-link linkedin">
+                                    <i class="fab fa-linkedin"></i>
+                                    LinkedIn
+                                </a>
+                                <a href="https://github.com/tu-usuario" class="contact-link github">
+                                    <i class="fab fa-github"></i>
+                                    GitHub
+                                </a>
+                                <a href="https://instagram.com/tu-usuario" class="contact-link instagram">
+                                    <i class="fab fa-instagram"></i>
+                                    Instagram
+                                </a>
+                            </div>
                         </div>
-                        <a href="" class="btn btn-outline-primary mr-4">Hire Me</a>
-                        <a href="" class="btn btn-outline-primary">Learn More</a>
-                </div>
-                <!--END ABOUT CONTENT-->
-                <!--END HOME-->
+            
+                        <form class="contact-form">
+                            <h2>Envíame un mensaje</h2>
+                            <div class="form-group">
+                                <label for="name">Nombre</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Asunto</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mensaje</label>
+                                <textarea id="message" name="message" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Enviar Mensaje</button>
+                        </form>
+                    </div>
+                </main>
+                <!--END CONTACT-->
 
                 <!--FOOTER-->
-                <div class="container py-4 bg-secondary text-center" id="footer">
+                <div class="container py-4 bg-secondary text-center">
                     <p class="m-0 text-white">
                         &copy; <a class="text-white font-weight-bold" href="#">My Portfolio</a>. All Rights Reserved. Designed by Natalia Ramos.
                     </p>

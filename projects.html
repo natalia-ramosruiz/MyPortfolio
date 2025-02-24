@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>My Portfolio - Natalia Ramos Ruiz</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+        <!--Customized CSS-->
+        <link href="style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <!--SIDEBAR-->
+            <div class="sidebar">
+                <div class="sidebar-text d-flex flex-column h-100 justify-content-center text-center">
+                    <img class="mx-auto d-block w-75 bg-primary profile-pic rounded-circle mb-3 mt-1" src="https://res.cloudinary.com/dmljqigr5/image/upload/v1737238101/WhatsApp_Image_2025-01-18_at_17.08.02_zzdcrt.jpg" alt="profile-pic">
+                    <h1 class="font-weight-bold" id="name">Natalia Ramos Ruiz</h1>
+                    <p class="mb-4" id="desc">
+                        Welcome to my portfolio. Explore my skills, projects, and experience in web development.
+                    </p>
+                    <div class="d-flex justify-content-center mb-5">
+                        <a class="btn btn-outline-primary mr-2" href="https://github.com/natalia-ramosruiz" target="_blank"><i class="fab fa-github"></i></a>
+                        <a class="btn btn-outline-primary mr-2" href="https://www.linkedin.com/in/nataliaramosruiz-developer/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-primary mr-2" href="https://www.instagram.com/tu-usuario/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <a href="https://drive.google.com/file/d/13cL_dMBLu2bRHcaCcwt_t2e6EC64vuIq/view?usp=drive_link" target="_blank" class="btn btn-lg btn-primary download-cv">Download CV</a>
+                </div>
+                <div class="sidebar-icon d-flex flex-column h-100 justify-content-center text-right">
+                    <i class="fas fa-2x fa-angle-double-right text-primary"></i>
+                </div>
+            </div>
+            <!--END SIDEBAR-->
+
+            <!--CONTENIDO-->
+            <div class="content">
+                <!-- NAVBAR -->
+                <div class="container p-0">
+                    <nav class="navbar navbar-expand-lg bg-secondary navbar-dark">
+                        <a href="" class="navbar-brand d-block d-lg-none"></a>
+                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                            <div class="navbar-nav m-auto">
+                                <a href="index.html" class="nav-item nav-link active">Home</a>
+                                <a href="about.html" class="nav-item nav-link">About Me</a>
+                                <div class="nav-item dropdown">
+                                    <a href="projects.html" class="nav-link dropdown-toggle" data-toggle="projects.html">Projects</a>
+                                    <div class="dropdown-menu">
+                                        <li><a href="projects.html#web-development" class="dropdown-item">Web Development</a></li>
+                                        <li><a href="projects.html#web-applications" class="dropdown-item">Web Applications</a></li>
+                                        <li><a href="projects.html#desktop-applications" class="dropdown-item">Desktop Applications</a></li>
+                                        <li><a href="projects.html#content-design" class="dropdown-item">Content Design</a></li>
+                                    </div>
+                                </div>
+                                <a href="technologies.html" class="nav-item nav-link">Technologies</a>
+                                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <!-- END NAVBAR -->
+            
+                <!--ABOUT HEADER-->
+                <div class="container py-5 px-2 bg-light" id=aboutheader>
+                        <div class="position-relative d-flex align-items-center justify-content-center">
+                            <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 2px #26A699;">Projects</h1>
+                            
+                        </div>
+                </div>
+                <!--END ABOUT HEADER-->
+
+                <!--PROJECTS CONTENT-->
+                <main>
+                    <!-- Web Development Section -->
+                    <section id="web-development" class="project-section">
+                        <h2>Web Development</h2>
+                        <div class="projects-grid">
+                            <!-- Calculadora Factorial -->
+                            <article class="project-card">
+                                <img src="https://res.cloudinary.com/dmljqigr5/image/upload/v1740368666/Calculador_factorial_qqbnnv.png" alt="Calculadora Factorial">
+                                <h3>Calculadora Factorial</h3>
+                                <p>Este programa en JavaScript calcula el factorial de cualquier número ingresado, demostrando la magia de la multiplicación progresiva.
+                                </p>
+                                <div class="project-links">
+                                    <a href="https://github.com/natalia-ramosruiz/Calculadora-Factorial-JavaScript.git" class="github-link">Ver en GitHub</a>
+                                    <a href="https://natalia-ramosruiz.github.io/Calculadora-Factorial-JavaScript/" class="demo-link">Demo en vivo</a>
+                                </div>
+                            </article>
+            
+                            <!-- Conversor de Temperatura -->
+                            <article class="project-card">
+                                <img src="https://res.cloudinary.com/dmljqigr5/image/upload/v1740368667/CT_io2qcd.png" alt="Conversor de Temperatura">
+                                <h3>Conversor de Temperatura</h3>
+                                <p>🔥❄️ ¿Frío o calor? Con esta herramienta en JavaScript, convierte cualquier temperatura de Celsius a Fahrenheit y Kelvin con solo un clic. Además, valida que los datos sean correctos, asegurando resultados precisos.</p>
+                                <div class="project-links">
+                                    <a href="https://github.com/natalia-ramosruiz/Conversor-de-Temperatura-JavaScript.git" class="github-link">Ver en GitHub</a>
+                                    <a href="https://natalia-ramosruiz.github.io/Conversor-de-Temperatura-JavaScript/" class="demo-link">Demo en vivo</a>
+                                </div>
+                            </article>
+            
+                            <!-- Landing Page Deportiva -->
+                            <article class="project-card">
+                                <img src="https://res.cloudinary.com/dmljqigr5/image/upload/v1740195763/Project3_maoj89.png" alt="Landing Page Deportiva">
+                                <h3>Landing Page - Artículos Deportivos</h3>
+                                <p>Un diseño web dinámico y atractivo para una tienda deportiva. Con una interfaz intuitiva, esta landing page facilita la exploración de productos y servicios, brindando una experiencia de usuario fluida y envolvente.</p>
+                                <div class="project-links">
+                                    <a href="https://github.com/natalia-ramosruiz/Landing-Page.git" class="github-link">Ver en GitHub</a>
+                                    <a href="https://natalia-ramosruiz.github.io/Landing-Page/" class="demo-link">Demo en vivo</a>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+            
+                    <!-- Web Applications Section -->
+                    <section id="web-applications" class="project-section">
+                        <h2>Web Applications</h2>
+                        <div class="projects-grid">
+                            <article class="project-card">
+                                <img src="https://res.cloudinary.com/dmljqigr5/image/upload/v1740369108/Project1_yocv2p.png" alt="eCommerce Emprendimientos">
+                                <h3>eCommerce - Manos Locales</h3>
+                                <p>Plataforma que conecta emprendimientos de Colombia con personas que valoran el trabajo hecho a mano. A través de este e-commerce se facilita el acceso a productos únicos de artesanos.</p>
+                                <div class="project-links">
+                                    <a href="https://github.com/MSaldarriagaGomez/ManosLocales-Ecommerce.git" class="github-link">Ver en GitHub</a>
+                                    <a href="[URL-DEMO]" class="demo-link">Demo en vivo</a>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+            
+                    <!-- Desktop Applications Section -->
+                    <section id="desktop-applications" class="project-section">
+                        <h2>Desktop Applications</h2>
+                        <div class="projects-grid">
+                            <article class="project-card">
+                                <img src="https://res.cloudinary.com/dmljqigr5/image/upload/v1740195762/Project2_wjfa0z.png" alt="Agenda Telefónica">
+                                <h3>Agenda Telefónica Java</h3>
+                                <p>Se mantienen los contactos organizados con esta agenda interactiva. Añade, busca y gestiona contactos sin riesgo de duplicados. Un sistema intuitivo que asegura que nunca pierdas el número de alguien importante. </p>
+                                <div class="project-links">
+                                    <a href="https://github.com/natalia-ramosruiz/Agenda-telefonica-Java.git" class="github-link">Ver en GitHub</a>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+            
+                    <!-- Content Design Section -->
+                    <section id="content-design" class="project-section">
+                        <h2>Content Design</h2>
+                        <div class="projects-grid">
+                            <article class="project-card">
+                                <img src="https://res.cloudinary.com/dmljqigr5/image/upload/v1740368386/IGcuadrado_zjjcyn.png" alt="Contenido Instagram">
+                                <h3>Diseño de Contenido Manos Locales para Emprendedores</h3>
+                                <p>Creé y diseñé contenido para Instagram con un enfoque en el consumo consciente y el comercio justo. A través de piezas gráficas atractivas, destaqué a los emprendedores y su impacto en la comunidad.</p>
+                                <div class="project-links">
+                                    <a href="https://www.instagram.com/manos_locales/" class="instagram-link">Ver en Instagram</a>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+                </main>
+                <!--END PROJECTS-->
+
+                <!--FOOTER-->
+                <div class="container py-4 bg-secondary text-center">
+                    <p class="m-0 text-white">
+                        &copy; <a class="text-white font-weight-bold" href="#">My Portfolio</a>. All Rights Reserved. Designed by Natalia Ramos.
+                    </p>
+                </div>
+                <!--END FOOTER-->
+            </div>
+        </div>
+
+        <!-- Back to Top -->
+        <a href="#" class="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+    </body>
+        <script>
+            function filterProjects(category) {
+                const projects = document.querySelectorAll('.project-card');
+                projects.forEach(project => {
+                    if (category === 'all' || project.dataset.category === category) {
+                        project.style.display = 'block';
+                    } else {
+                        project.style.display = 'none';
+                    }
+                });
+            }
+
+            // Para manejar los enlaces directos a proyectos
+            function scrollToProject(projectId) {
+                const element = document.getElementById(projectId);
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+
+            // Verificar si hay un hash en la URL al cargar
+            window.addEventListener('load', () => {
+                if (window.location.hash) {
+                    const projectId = window.location.hash.substring(1);
+                    scrollToProject(projectId);
+                }
+            });
+        </script>
+</html>
